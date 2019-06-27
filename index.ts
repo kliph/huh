@@ -21,3 +21,12 @@ const compile = (filename: string) => {
 };
 
 compile(filename);
+
+const run = async () => {
+  const buffer = readFileSync(wasmPath(filename))
+  const wasmModule = await WebAssembly.compile(buffer);
+  const instance = await WebAssembly.instantiate(wasmModule);
+  console.log(instance.exports.helloWorld());
+}
+
+run();

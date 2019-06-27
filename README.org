@@ -1,0 +1,6 @@
+* huh?
+Huh is a sandbox for playing around with handcrafted [[https://developer.mozilla.org/en-US/docs/WebAssembly/Understanding_the_text_format][WebAssembly text format]] (=wat=).
+* Usage
+
+* Notes on wat and wasm
+** Following along with https://blog.scottlogic.com/2018/04/26/webassembly-by-hand.html

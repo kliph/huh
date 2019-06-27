@@ -1,0 +1,20 @@
+{
+  "name": "huh",
+  "version": "1.0.0",
+  "description": "huh compiles wat to wasm",
+  "main": "index.ts",
+  "repository": "https://github.com/kliph/huh",
+  "author": "Cliff Rodgers",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "lint": "prettier --write index.ts",
+    "test": "jest"
+  },
+  "license": "Apache-2.0",
+  "dependencies": {
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2"
+  }
+}

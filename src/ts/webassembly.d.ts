@@ -1,6 +1,7 @@
 /**
  * WebAssembly v1 (MVP) declaration file for TypeScript
  * Definitions by: 01alchemist (https://twitter.com/01alchemist)
+ * Copied from https://github.com/01alchemist/webassembly-types under an MIT license
  */
 declare namespace WebAssembly {
   /**

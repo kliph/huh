@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "target": "esnext",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true
+  },
+  "include": [
+    "./src/ts/**/*.ts"
+  ],
+  "exclude": [
+    "./node_modules",
+    "./src/ts/webassembly.d.ts"
+  ]
+}

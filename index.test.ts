@@ -1,14 +1,7 @@
-import { readFileSync } from "fs";
 import { build } from "./src/ts/build";
+import { instantiate } from "./src/ts/util";
 
 const GLOBAL: Record<any, any> = {};
-
-const instantiate = async () => {
-  const buffer = readFileSync("./out/wasm/helloWorld.wasm");
-  const wasmModule = await WebAssembly.compile(buffer);
-  const instance = await WebAssembly.instantiate(wasmModule);
-  return instance.exports;
-};
 
 beforeAll(() => {
   build("helloWorld");

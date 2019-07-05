@@ -11,11 +11,15 @@ declare namespace WebAssembly {
     constructor(bufferSource: ArrayBuffer | Uint8Array);
 
     static customSections(module: Module, sectionName: string): ArrayBuffer[];
-    static exports(module: Module): {
+    static exports(
+      module: Module
+    ): {
       name: string;
       kind: string;
     }[];
-    static imports(module: Module): {
+    static imports(
+      module: Module
+    ): {
       module: string;
       name: string;
       kind: string;
@@ -49,7 +53,7 @@ declare namespace WebAssembly {
    * WebAssembly.Table
    **/
   interface TableDescriptor {
-    element: "anyfunc",
+    element: "anyfunc";
     initial: number;
     maximum?: number;
   }
@@ -96,7 +100,10 @@ declare namespace WebAssembly {
     instance: Instance;
   }
 
-  function instantiate(bufferSource: ArrayBuffer | Uint8Array, importObject?: any): Promise<ResultObject>;
+  function instantiate(
+    bufferSource: ArrayBuffer | Uint8Array,
+    importObject?: any
+  ): Promise<ResultObject>;
   function instantiate(module: Module, importObject?: any): Promise<Instance>;
 
   function validate(bufferSource: ArrayBuffer | Uint8Array): boolean;

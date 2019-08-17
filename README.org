@@ -4,3 +4,5 @@ Huh is a sandbox for playing around with handcrafted [[https://developer.mozilla
 
 * Notes on wat and wasm
 ** Following along with https://blog.scottlogic.com/2018/04/26/webassembly-by-hand.html
+** See WASM Without Boilerplate
+/[[https://docs.google.com/document/d/1K8EjLSKl62s_M7ZkDfuOizdsamv2UKUwwQRF2DmIba0/edit][WASM Without Boilerplate]]/
